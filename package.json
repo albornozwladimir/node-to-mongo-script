@@ -1,0 +1,30 @@
+{
+  "name": "node-mongodb",
+  "version": "1.0.0",
+  "description": "Script para crear y poblar base de datos MongoDB",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js >> logfile.log",
+    "dev": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albornozwladimir/node-to-mongo-script.git"
+  },
+  "author": "wladimir-andres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albornozwladimir/node-to-mongo-script/issues"
+  },
+  "homepage": "https://github.com/albornozwladimir/node-to-mongo-script#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
