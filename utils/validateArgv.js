@@ -1,4 +1,4 @@
-export const validateArgv = (internalContext, companyName) => {
+export const validateArgv = async (internalContext, companyName) => {
   
   if(!companyName) return [false, 'Empty company name']
    
