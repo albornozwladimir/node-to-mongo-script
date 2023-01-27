@@ -1,7 +1,6 @@
 import * as dotenv from 'dotenv'
 dotenv.config()
 
-
 export const getInternalContext = async () => {
   let internalContext = {
     mongo: {
@@ -9,7 +8,8 @@ export const getInternalContext = async () => {
       db: process.env.MONGO_DATABASE || "local",
       beersCollection: process.env.MONGO_BEER_COLLECTION
     },
-    environment: process.env.ENVIRONMENT || "development"
+    environment: process.env.ENVIRONMENT || "development",
+    companies: process.env.COMPANIES || []
   }
 
   return internalContext
